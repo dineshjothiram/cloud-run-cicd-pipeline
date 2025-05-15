@@ -6,7 +6,7 @@ version = os.environ.get("VERSION", "dev")
 
 @app.route("/")
 def hello():
-    return f"Hello from Cloud Run Welcomes you from RDP! Version: {version}"
+    return f"Hello from Cloud Run Welcomes you!This message for version 2 Version: {version}"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
